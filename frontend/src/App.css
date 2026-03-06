@@ -49,13 +49,122 @@ tr:nth-child(even) {
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .app-header h1 {
   margin: 0;
 }
 
+.app-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.app-nav button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.app-nav button:hover {
+  background: #f5f5f5;
+  border-color: #bbb;
+}
+
+.app-nav button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
 .btn-disconnect {
   padding: 0.25rem 0.75rem;
   font-size: 0.85rem;
+}
+
+/* Dashboard styles */
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.lab-selector {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lab-selector label {
+  font-weight: 600;
+  color: #555;
+}
+
+.lab-selector select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  min-width: 200px;
+  cursor: pointer;
+}
+
+.lab-selector select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.chart-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 1.25rem;
+}
+
+.table-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 1.25rem;
+}
+
+.table-section table {
+  margin-top: 1rem;
+}
+
+.table-section tbody tr:hover {
+  background: #f0f7ff;
 }
